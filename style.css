@@ -1,0 +1,136 @@
+:root {
+    --pink: #C58CB8;
+    --purple: #BF05ED;
+    --orange: #F78452;
+    --darkPurple: #7E3091;
+    --greyConsole: #94918D;
+    --retroBlue: #010B5D;
+}
+
+*{
+    color: var(--retroBlue);
+}
+
+.fontRetro{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fontGotic{
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    letter-spacing: 0.7px;    
+}
+
+/* backround */
+.bg-console{
+    background-color: var(--greyConsole);
+}
+
+.bg-blue{
+    background-color: var(--retroBlue);
+}
+
+.bg-purple{
+    background-color: var(--purple);
+}
+
+.bg-darkpurple{
+    background-color: var(--darkPurple);
+}
+
+.bg-orange{
+    background-color: var(--orange);
+}
+
+.logo{
+    height: 70px;
+}
+
+/* btn */
+.btn-orange{
+    background-color: var(--orange);
+    border: solid 2px var(--retroBlue);
+    color: var(--retroBlue);
+}
+
+.btn-orange:hover{
+    background-color: var(--orange);
+    border: solid 2px var(--retroBlue);
+    color: var(--retroBlue);
+    scale: 1.2;
+}
+
+/* text */
+.txt-orange{
+    color: var(--orange);
+}
+
+.txt-blue{
+    color: var(--retroBlue);
+}
+
+.txt-darkPurple{
+    color: var(--darkPurple);
+}
+
+.spazio{
+    margin-top: 150px;
+}
+
+.arrow-right{
+    rotate: -45deg;
+}
+
+.arrow-left{
+    rotate: 135deg;
+}
+
+.border-card{
+    width: 50%;
+    margin: 2px;
+    box-shadow:   -15px 0 0 0 var(--retroBlue),
+                   15px 0 0 0 var(--retroBlue),
+                   0 -15px 0 0 var(--retroBlue),
+                   0 15px 0 0 var(--retroBlue);
+}
+
+.border-btn{
+    box-shadow:   -4px 0 0 0 var(--retroBlue),
+                   4px 0 0 0 var(--retroBlue),
+                   0 -4px 0 0 var(--retroBlue),
+                   0 4px 0 0 var(--retroBlue);
+}
+
+.border-btn:hover{
+    box-shadow:   -4px 0 0 0 var(--orange),
+                   4px 0 0 0 var(--orange),
+                   0 -4px 0 0 var(--orange),
+                   0 4px 0 0 var(--orange);
+}
+
+.img-carousel{
+    height: 60vh;
+    width: 40vw;
+}
+
+@media screen and (max-width: 600px) {
+    .img-carousel{
+        height: 40vh;
+        width: 90%;
+    }
+
+    .logo{
+        height: 40px;
+    }
+}
+
+.img-card{
+    height: 30vh;
+}
+.img-modal{
+    height: 30%;
+    width: 100%;
+}
